@@ -1,0 +1,27 @@
+.signup {
+  display: none;
+}
+
+@media (max-width: 685px) {
+  .signup {
+    display: inherit;
+    overflow-x: hidden;
+    background: aliceblue;
+    padding: 2rem 0rem;
+    position: fixed;
+    bottom: -33rem;
+    width: 100%;
+    transition: 850ms;
+  }
+
+  .signup.active {
+    bottom: 0;
+    z-index: 1000;
+    transform: 350ms;
+  }
+
+  .inputs1 input {
+    margin-top: 1rem;
+    padding: 5px;
+  }
+}
